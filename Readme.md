@@ -1,14 +1,16 @@
+1--------------------------------------------------------
+
 clone the repo
 
-use the repo to restore mongo db 
+TO use the repo to restore mongo db 
 
 docker cp mongo_bkp <mongo_container_id>:/data/restore
 
 docker exec <mongo_container_id> mongostore /data/restore
 
+2-------------------------------------------------------
 
-
-backup mongo db data again
+TO backup mongo db data again
 
 docker exec <mongo_container_id> mongodump --out /data/backup
 
